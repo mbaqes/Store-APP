@@ -1,16 +1,43 @@
 # stateapp
 
-A new Flutter project.
+ ## Getting Started
+```
+class App extends StatelessWidget {
+  const App({super.key});
+## Step One
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
 
-## Getting Started
+      /// لما تبي تفهم كل شي من بداية حاول تشوف  -->> home: HomePageStepOne
+      home: HomePageStepOne(),
+    );
+  }
+}
+```
+## Step Two
+```
+class App extends StatelessWidget {
+  const App({super.key});
+## Step One
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+      // المرحلة التانية 
+      home: HomePageStepTwo(),
+    );
+  }
+}
