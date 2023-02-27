@@ -14,6 +14,8 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+
+      /// لما تبي تفهم كل شي من بداية حاول تشوف  -->> home: HomePageStepOne
       home: HomePageStepTwo(),
     );
   }
