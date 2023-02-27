@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:stateapp/views/homepagesteptwo/cubit/prudact_cubit.dart';
 import 'package:stateapp/views/homepagesteptwo/data/model/product_model.dart';
 import 'package:stateapp/views/homepagesteptwo/widgets/item.dart';
+import 'package:stateapp/views/homepagesteptwo/widgets/loading_center.dart';
 
 class ProductList extends StatelessWidget {
   ProductList({
@@ -24,7 +25,7 @@ class ProductList extends StatelessWidget {
             list = state.products;
           }
           if (state is ProductLoading) {
-            return CircularProgressIndicator();
+            return Center(child: LoadingCenter());
           }
           return ListView.builder(
             itemCount: list.length,
